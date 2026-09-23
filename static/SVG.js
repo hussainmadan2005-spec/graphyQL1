@@ -93,7 +93,7 @@ export function renderXpProgressChart(points, totalXP) {
     const formatValue = (value) => {
         const v = Number(value || 0);
         if (v >= 1000) {
-            return `${(v / 1000).toFixed(2)} kB`;
+            return `${(v / 1000)} kB`;
         }
         return `${Math.round(v)} XP`;
     };
