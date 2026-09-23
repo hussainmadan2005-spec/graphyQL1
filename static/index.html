@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= LOGIN PAGE ================= -->
+
+    <div id="loginPage" class="login-container">
+
+        <div class="login-card">
+
+            <h1>Welcome Back</h1>
+
+            <p class="subtitle">
+                                       Login to view your Reboot01 profile
+            </p>
+
+            <form id="loginForm">
+
+                <label for="identifier">
+                    Username or Email
+                </label>
+
+                <input
+                    type="text"
+                    id="identifier"
+                    placeholder="Username or Email"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <button type="submit" id="loginButton">
+                    Login
+                </button>
+
+                <p id="loginError" class="error"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= PROFILE PAGE ================= -->
+
+    <div id="profilePage" class="profile-container hidden">
+
+        <header class="header">
+
+            <div>
+                <h1>My Profile</h1>
+                <p>Reboot01 Student Dashboard</p>
+            </div>
+
+            <button id="logoutButton" class="logout-button">
+                Logout
+            </button>
+
+        </header>
+
+
+        <main>
+
+            <!-- USER INFORMATION -->
+
+            <section class="profile-card">
+
+                <div class="profile-header-row">
+                    <div>
+                        <p class="eyebrow">Student profile</p>
+                        <h2 id="username">Loading...</h2>
+                    </div>
+                    <span class="profile-badge">Active</span>
+                </div>
+
+                <p id="fullName" class="full-name">Loading full name...</p>
+
+                <div class="profile-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">Phone</span>
+                        <strong id="phoneNumber">-</strong>
+                    </div>
+
+                    <div class="meta-item">
+                        <span class="meta-label">Degree</span>
+                        <strong id="degree">-</strong>
+                    </div>
+
+                    <div class="meta-item">
+                        <span class="meta-label">User ID</span>
+                        <strong id="userId">-</strong>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- STATISTICS -->
+
+            <section class="stats">
+
+                <div class="stat-card">
+
+                    <h3>Total XP</h3>
+
+                    <p id="xp">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>Current Level</h3>
+
+                    <p id="currentLevel">
+                        -
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>Audit Ratio</h3>
+
+                    <p id="auditRatio">
+                        -
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- GRAPH AREA -->
+
+            <section class="graph-grid graph-grid--full">
+
+                <div class="graph-card graph-card--full">
+                    <h2>XP Progress (bh-piscine)</h2>
+                    <div id="xpProgressChart" class="chart-container chart-container--full">
+                        <p class="loading">Loading XP progress...</p>
+                    </div>
+                </div>
+
+                <div class="graph-card graph-card--large">
+                    <h2>Audit Ratio</h2>
+                    <div id="xpGraph" class="chart-container">
+                        <p class="loading">
+                            Graph will be added here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="graph-card graph-card--large">
+                    <h2>Pass / Fail Projects</h2>
+                    <div id="passFailGraph" class="chart-container">
+                        <p class="loading">Loading project status...</p>
+                    </div>
+                </div>
+
+                <div class="graph-card graph-card--large">
+                    <h2>XP per Project</h2>
+                    <div id="xpPerProjectGraph" class="chart-container">
+                        <p class="loading">Loading XP report...</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>

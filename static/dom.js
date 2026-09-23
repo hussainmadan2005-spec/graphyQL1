@@ -1,0 +1,14 @@
+export const loginPage = document.getElementById("loginPage");
+export const profilePage = document.getElementById("profilePage");
+export const loginForm = document.getElementById("loginForm");
+export const loginError = document.getElementById("loginError");
+export const loginButton = document.getElementById("loginButton");
+export const logoutButton = document.getElementById("logoutButton");
+export const usernameElement = document.getElementById("username");
+export const fullnameElement = document.getElementById("fullName");
+export const phoneNumberElement = document.getElementById("phoneNumber");
+export const degreeElement = document.getElementById("degree");
+export const userIdElement = document.getElementById("userId");
+export const xpElement = document.getElementById("xp");
+export const projectLevelElement = document.getElementById("currentLevel");
+export const auditRatioElement = document.getElementById("auditRatio");
